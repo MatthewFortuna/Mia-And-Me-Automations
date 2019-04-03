@@ -1,0 +1,22 @@
+module.exports = (lPage) => {
+    lPage
+        .waitForElementPresent('li[class="product-category product first"]')
+        .pause(2000)
+        .click('li[class="product-category product first"]')
+        .waitForElementPresent('#post-0 > div > div > div > ul > li.post-1434.product.type-product.status-publish.has-post-thumbnail.product_cat-world-of-color.first.instock.featured.taxable.shipping-taxable.purchasable.product-type-variable.has-default-attributes > a.button.product_type_variable.add_to_cart_button')
+        .pause(2000)
+        .click('#post-0 > div > div > div > ul > li.post-1434.product.type-product.status-publish.has-post-thumbnail.product_cat-world-of-color.first.instock.featured.taxable.shipping-taxable.purchasable.product-type-variable.has-default-attributes > a.button.product_type_variable.add_to_cart_button')
+.waitForElementPresent('#color')
+.pause(2000)
+        .setValue('#color', 'S')
+        .setValue('#size', 'M')
+        .setValue('#attachment', 'N')
+        .click('button[type="submit"]')
+        .waitForElementPresent('a[class="button wc-forward"]')
+        .click('a[class="button wc-forward"]')
+        .waitForElementPresent('td[class="product-name"]')
+    lPage.expect.element('td[class="product-name"]').text.to.contain('Candy Colors')
+    lPage.expect.element('td[class="product-name"]').text.to.contain('Snow')
+    lPage.expect.element('td[class="product-name"]').text.to.contain('Medium')
+    lPage.expect.element('td[class="product-name"]').text.to.contain('Nylon')
+}

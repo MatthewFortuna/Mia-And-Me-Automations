@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="addToCart"
+    errors="0" failures="0" hostname="" id="" package="addToCart" skipped="0"
+    tests="1" time="23.91" timestamp="">
+  
+    <testcase name="Add To Cart Test" classname="addToCart" time="23.91" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
